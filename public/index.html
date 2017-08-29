@@ -1,0 +1,104 @@
+<!-- BOILERPLATE FOR PAUL HUMPHREY .html FILES -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- vue.js -->
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.5.3/vue-router.js"></script>
+        <meta charset="utf-8"/>
+        <title>Paul Humphrey - Personal Portfolio</title>
+        <!-- mobile ready -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- favicons -->
+        <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bellefair|Lobster+Two|Lora|Roboto" rel="stylesheet">
+        <!-- custom css -->
+        <link rel="stylesheet" href="/css/main.css">
+        <!-- jQuery js -->
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <!-- bootstrap js -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <!-- begin vue app -->
+        <div id="app">
+
+        <!-- navbar start -->
+        <nav class="navbar navbar-default"><!-- open navbar -->
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <router-link class="navbar-brand" to="/"><img src="/images/favicon-32x32.png"></router-link>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><router-link to="/">Home</router-link></li>
+                        <li><router-link to="/about">About</router-link></li>
+                        <li><router-link to="/skills">Skills</router-link></li>
+                        <li><router-link to="/clients">Clients</router-link></li>
+                        <li><router-link to="/portfolio">Portfolio</router-link></li>
+                        <li><router-link to="/interests">Interests</router-link></li>
+                        <li><router-link to="/contact">Contact</router-link></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav><!-- close navbar -->
+        <!-- navbar end -->
+
+        <!-- header section - name, title, photo, contact -->
+        <header>
+            <div class="row prh-red-row text-center">
+                <h1>Paul Humphrey</h1>
+            </div>
+            <div class="row prh-grey-row text-center">
+                <h2>Front-end Web Developer</h2>
+            </div>
+            <div class="container">
+                <img src="/images/prh-headshot-color-300.jpg" class="img-responsive center-block img-circle headshot" alt="Paul Humphrey headshot">
+            </div>
+        </header>
+
+        <!-- vue spa begin -->
+        <router-view></router-view>
+        <!-- vue spa end -->
+
+        <!-- footer, copyright info -->
+        <footer>
+            <div class="row text-center">
+                <p><router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> | <router-link to="/skills">Skills</router-link> | <router-link to="/clients">Clients</router-link> | <router-link to="/portfolio">Portfolio</router-link> | <router-link to="/interests">Interests</router-link> | <router-link to="/contact">Contact</router-link></p>
+                <small>Copyright &copy; Paul Humphrey. All rights reserved.</small>
+            </div>
+        </footer>
+
+
+        <!-- end vue app -->
+        </div>
+
+    <!-- custom js -->
+    <script src="/js/main.js"></script>
+
+    </body>
+
+</html>
